@@ -76,6 +76,7 @@ main {
 
 .filter {
     padding: 30px 0px 30px 60px;
+    overflow: hidden;
 }
 
 .filter form {
