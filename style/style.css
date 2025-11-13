@@ -24,7 +24,6 @@ main {
 
 /* header css */
 .main_header {
-    border: 1px solid black;
     padding: 10px 60px;
     display: flex;
     align-items: center;
@@ -58,4 +57,45 @@ main {
     list-style: none;
     align-items: center;
     gap: 20px;
+}
+
+
+@media screen and (width < 570px) {
+    .main_header {
+        flex-wrap: wrap;
+        padding: 10px 30px;
+        gap: 10px;
+        /* justify-content: center; */
+    }
+
+}
+
+
+
+/*  filter css */
+
+.filter {
+    padding: 30px 0px 30px 60px;
+}
+
+.filter form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.filter form>div {
+    flex-shrink: 0;
+}
+
+
+.filter form input,
+.filter form select {
+    padding: 12px 16px;
+    border-radius: 37px;
+    background: white;
+}
+
+.filter form input {
+    width: 360px;
 }
