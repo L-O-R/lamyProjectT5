@@ -25,6 +25,18 @@ main {
 }
 
 
+section {
+    padding: 3.5em 60px;
+}
+
+section h2 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+
 /* header css */
 .main_header {
     padding: 10px 60px;
@@ -139,7 +151,7 @@ main {
 .hero_section {
     padding: 30px 60px;
     min-height: 100vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -203,13 +215,13 @@ main {
 
 .card_white_bottom .card_white_bottom_left {
     flex-basis: 70%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .card_white_bottom .card_white_bottom_right {
     align-self: flex-end;
     flex-basis: 30%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .card_white_bottom_right img {
@@ -221,15 +233,185 @@ main {
 
 .gradient_Card {
     grid-area: span 3 / span 2;
+    border-radius: 37px;
+    display: flex;
+    justify-content: center;
     background: linear-gradient(180deg, #D7EBEB 14.69%, #F4AFE9 55.52%, #9D7EF3 100%);
+}
+
+.gradient_Card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .last_card {
     grid-column: span 4;
     display: flex;
+
     gap: 20px;
+}
+
+.last_card div {
+    flex: 1;
+    min-height: 25vh;
 }
 
 .last_card img {
     width: 100%;
+    height: 100%;
+    border-radius: 37px;
+
+}
+
+.last_third_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+    border-radius: 37px;
+    background: #fff;
+}
+
+
+/* category list */
+
+.category_list header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+    /* padding: 24px 60px; */
+}
+
+.category_list header button {
+    border-radius: 24px;
+    padding: 1em 1.4em;
+    background-color: white;
+    color: #000;
+    border: none;
+    font-size: 1rem;
+}
+
+.category_list figure {
+    flex-grow: 1;
+    flex-shrink: 0;
+
+}
+
+
+
+
+.category_list .popular_card1 {
+    flex-grow: 0.3;
+}
+
+.category_list .popular_card2 {
+    flex-grow: 1.4;
+}
+
+.category_list .popular_card3 {
+    flex-grow: 0.3;
+}
+
+
+
+.category_list header button.active {
+    background-color: #000;
+    color: white;
+}
+
+
+.category_list .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+
+.category_list .container img {
+    border-radius: 37px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/0.65;
+}
+
+
+/* why us  */
+
+.why_us .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+
+.why_us .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    background-color: #fff;
+    border-radius: 37px;
+    padding: 1.5em;
+}
+
+
+/*  cta css */
+
+.cta {
+    margin: 2em 60px;
+    border-radius: 37px;
+    background: transparent url('../assets/ctabg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cta .container {
+    background: #fff;
+    padding: 4em 3em;
+    border-radius: 37px;
+    display: flex;
+    gap: 1.5em;
+}
+
+
+.cta .right {
+    flex-grow: 1;
+    flex-shrink: 0;
+    /* border: 1px solid black; */
+}
+
+.cta .left {
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid black; */
+
+}
+
+
+.cta .left p {
+    max-width: 80%;
+}
+
+.cta form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    /* width: 100%; */
+    margin-bottom: 1.2em;
+}
+
+
+.cta form input {
+    padding: 1em;
+    /* width: 100%; */
 }
