@@ -36,6 +36,18 @@ section h2 {
     letter-spacing: 0%;
 }
 
+@media screen and (width < 920px) {
+    section {
+        padding: 3.5em 20px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+
 
 /* header css */
 .main_header {
@@ -159,6 +171,8 @@ section h2 {
 }
 
 
+
+
 .card_white {
     grid-area: span 3 / span 2;
     background: #fff;
@@ -276,6 +290,38 @@ section h2 {
 }
 
 
+@media screen and (width < 920px) {
+    .hero_section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 2em 20px;
+    }
+
+    .card_white h1 {
+        font-size: 2rem;
+    }
+
+    .card_white,
+    .gradient_Card {
+        grid-area: span 1;
+    }
+
+    .card_white_bottom {
+        flex-direction: column;
+    }
+
+    .gradient_Card {
+        display: hidden;
+        max-width: auto;
+    }
+
+    .last_card {
+        grid-area: span 1;
+        flex-direction: column;
+    }
+}
+
+
 /* category list */
 
 .category_list header {
@@ -339,6 +385,29 @@ section h2 {
     aspect-ratio: 1/0.65;
 }
 
+@media screen and (width < 920px) {
+    .category_list header {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .category_list header button {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    .category_list .container {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .category_list .container figure {
+        position: sticky;
+        top: 20px;
+    }
+}
+
 
 /* why us  */
 
@@ -347,6 +416,7 @@ section h2 {
     align-items: center;
     justify-content: space-between;
     gap: 1.5em;
+    /* flex-wrap: wrap; */
 }
 
 
@@ -359,6 +429,12 @@ section h2 {
     background-color: #fff;
     border-radius: 37px;
     padding: 1.5em;
+}
+
+@media screen and (width < 920px) {
+    .why_us .container {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -378,6 +454,7 @@ section h2 {
     border-radius: 37px;
     display: flex;
     gap: 1.5em;
+    flex-wrap: wrap;
 }
 
 
@@ -414,4 +491,16 @@ section h2 {
 .cta form input {
     padding: 1em;
     /* width: 100%; */
+}
+
+
+@media screen and (width < 920px) {
+
+    .cta {
+        margin: 2.5em 20px;
+    }
+
+    .cta .container .left {
+        flex-shrink: 1;
+    }
 }
